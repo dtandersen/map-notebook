@@ -16,8 +16,8 @@ Then access it at http://datahub.ucsd.edu/hub/user-redirect/proxy/8080
 ## How to reset DB
 
 ```
-rm -rf .local/share/label-studio/
-rm -rf .config/label-studio
+rm -rf ~/.local/share/label-studio/
+rm -rf ~/.config/label-studio
 ```
 
 ## Ultralytics
