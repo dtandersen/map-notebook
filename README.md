@@ -22,7 +22,7 @@ Restart the terminal or run `source ~/.bashrc`.
 
 ## Start Label Studio
 
-Activate the `label-studio` environment and start Label Studio.
+Activate the `label-studio` environment and start Label Studio. You should see `(label-studio)` in the command prompt.
 
 ```
 mamba activate /opt/conda/envs/label-studio
