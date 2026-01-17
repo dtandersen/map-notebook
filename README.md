@@ -6,7 +6,7 @@ https://education.sdsc.edu/studenttech/map-home/
 
 ## Configure Conda
 
-Open a new terminal and create the `~/.profile` file that will source the `~/.bashrc` file:
+Open the terminal and create a file named `.profile` in the home directory. This automatically loads the `~/.bashrc` file in future terminals.
 
 ```
 source ~/.bashrc
@@ -31,7 +31,7 @@ export CSRF_TRUSTED_ORIGINS=https://datahub.ucsd.edu
 label-studio start
 ```
 
-Then access it at http://datahub.ucsd.edu/hub/user-redirect/proxy/8080
+Access Label Studio at http://datahub.ucsd.edu/hub/user-redirect/proxy/8080.
 
 ## How to reset DB
 
