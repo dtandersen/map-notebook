@@ -70,6 +70,7 @@ RUN mamba create --yes -p "${CONDA_DIR}/envs/${ENVNAME}" \
     label-studio \
     "numpy<2" \
     yolo \
+    onnxruntime \
     onnxruntime-gpu \
     onnx \
     onnxslim && \
