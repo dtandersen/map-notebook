@@ -73,7 +73,7 @@ RUN mamba create --yes -p "${CONDA_DIR}/envs/${ENVNAME}" \
     onnxruntime-gpu \
     onnx \
     onnxslim && \
-    conda clean --dry-run && \
+    conda clean -a --dry-run && \
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
 
