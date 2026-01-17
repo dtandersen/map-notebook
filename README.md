@@ -11,6 +11,7 @@ mamba init
 source ~/.bashrc
 mamba activate /opt/conda/envs/label-studio
 export LABEL_STUDIO_HOST=https://datahub.ucsd.edu/user/$USER/proxy/8080
+export CSRF_TRUSTED_ORIGINS=https://datahub.ucsd.edu
 label-studio start
 ```
 
