@@ -46,14 +46,28 @@ RUN "${CONDA_DIR}/envs/${ENVNAME}/bin/python" -m ipykernel install --prefix /opt
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
 
-RUN "${CONDA_DIR}/envs/${ENVNAME}/bin/pip" install --no-cache-dir \
+RUN conda install -c pytorch -c nvidia -c conda-forge \
+    pytorch \
+    torchvision \
+    pytorch-cuda=11.8 \
     label-studio \
     "numpy<2" \
     yolo \
     ultralytics \
     onnxruntime-gpu \
     onnx \
-    onnxslim
+    onnxslim && \
+    fix-permissions "${CONDA_DIR}" && \
+    fix-permissions "/home/${NB_USER}"
+
+# RUN "${CONDA_DIR}/envs/${ENVNAME}/bin/pip" install --no-cache-dir \
+#     label-studio \
+#     "numpy<2" \
+#     yolo \
+#     ultralytics \
+#     onnxruntime-gpu \
+#     onnx \
+#     onnxslim
 
 # 3) install packages using notebook user
 USER jovyan
