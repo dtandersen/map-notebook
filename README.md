@@ -2,7 +2,9 @@
 
 https://education.sdsc.edu/studenttech/map-home/
 
-## Starting label-studio
+# Label Studio
+
+## Configure Conda
 
 Open a new terminal and run:
 
@@ -18,7 +20,11 @@ Initialize conda environment.
 mamba init
 ```
 
-Restart the terminal or run `source ~/.bashrc`. Then activate the `label-studio` environment and start Label Studio.
+Restart the terminal or run `source ~/.bashrc`. 
+
+## Start Label Studio
+
+Activate the `label-studio` environment and start Label Studio.
 
 ```
 mamba activate /opt/conda/envs/label-studio
@@ -31,14 +37,18 @@ Then access it at http://datahub.ucsd.edu/hub/user-redirect/proxy/8080
 
 ## How to reset DB
 
+These commands will reset the environment.
+
 ```
 rm -rf ~/.local/share/label-studio/
 rm -rf ~/.config/label-studio
 ```
 
-## Ultralytics
+# Ultralytics
 
 Select a notebook with a GPU to use CUDA hardware acceleration.
+
+Within the notebook, select the `label-studio` kernel.
 
 **Sample code**
 
